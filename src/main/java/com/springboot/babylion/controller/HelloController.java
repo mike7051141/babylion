@@ -12,6 +12,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public ResponseEntity<String> hello(){
-        return ResponseEntity.status(HttpStatus.OK).body("도커 CI/CD 성공~~~");
+        return ResponseEntity.status(HttpStatus.OK).body("도커 CI/CD 파이프라인 구축 성공~~~");
     }
 }
