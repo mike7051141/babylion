@@ -52,4 +52,4 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/babylion:latest
             docker stop babylion || true
             docker rm babylion || true
-            docker run -d --name babylion -p 8081:8080 ${{ secrets.DOCKERHUB_USERNAME }}/babylion:latest
+            docker run -d --name babylion -p 8082:8080 ${{ secrets.DOCKERHUB_USERNAME }}/babylion:latest
